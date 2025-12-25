@@ -1,0 +1,166 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-5);
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-neutral-12);
+  margin-bottom: var(--space-4);
+}
+
+.subtitle {
+  font-family: var(--font-subheading);
+  font-size: 1.25rem;
+  color: var(--color-neutral-11);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+}
+
+.contactInfo {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.infoCard {
+  padding: var(--space-6);
+  background: var(--color-neutral-1);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+}
+
+.infoCard h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin-bottom: var(--space-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.infoCard h2 svg {
+  color: var(--color-accent-9);
+}
+
+.infoItem {
+  display: flex;
+  align-items: start;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--color-neutral-2);
+  border-radius: var(--radius-3);
+  margin-bottom: var(--space-3);
+}
+
+.infoItem:last-child {
+  margin-bottom: 0;
+}
+
+.infoIcon {
+  color: var(--color-accent-9);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.infoContent h3 {
+  font-family: var(--font-subheading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin-bottom: var(--space-2);
+}
+
+.infoContent p,
+.infoContent a {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-neutral-11);
+  line-height: 1.6;
+}
+
+.infoContent a {
+  color: var(--color-accent-10);
+  text-decoration: none;
+  transition: color 0.2s var(--ease-out);
+}
+
+.infoContent a:hover {
+  color: var(--color-accent-11);
+  text-decoration: underline;
+}
+
+.formSection {
+  background: var(--color-neutral-1);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-7);
+}
+
+.formSection h2 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin-bottom: var(--space-6);
+}
+
+.form {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.successMessage {
+  padding: var(--space-5);
+  background: var(--color-success-2);
+  border: 1px solid var(--color-success-6);
+  border-radius: var(--radius-3);
+  text-align: center;
+}
+
+.successMessage h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-success-11);
+  margin-bottom: var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.successMessage p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-neutral-11);
+}
+
+@media (max-width: 968px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.25rem;
+  }
+  
+  .formSection {
+    padding: var(--space-5);
+  }
+}
